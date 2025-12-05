@@ -1,0 +1,27 @@
+// Custom variables and overrides
+@import 'custom';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Additional custom styles can be added below
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+// Import des composants personnalisés
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/forms';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// Pages
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';

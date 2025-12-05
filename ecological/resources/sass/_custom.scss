@@ -1,0 +1,71 @@
+// Custom variables
+$primary: #6B8E4E;
+$secondary: #8B6914;
+$dark: #3D5A2C;
+$light: #E8F5E0;
+
+// Import Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Custom styles
+body {
+    background-color: $light;
+    color: $dark;
+}
+
+.navbar {
+    background-color: $primary !important;
+    
+    .navbar-brand, .nav-link {
+        color: white !important;
+        
+        &:hover {
+            color: darken(white, 10%) !important;
+        }
+    }
+}
+
+.btn-primary {
+    background-color: $primary;
+    border-color: darken($primary, 5%);
+    
+    &:hover, &:focus {
+        background-color: darken($primary, 10%);
+        border-color: darken($primary, 15%);
+    }
+}
+
+.btn-secondary {
+    background-color: $secondary;
+    border-color: darken($secondary, 5%);
+    
+    &:hover, &:focus {
+        background-color: darken($secondary, 10%);
+        border-color: darken($secondary, 15%);
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $dark;
+}
+
+a {
+    color: $primary;
+    
+    &:hover {
+        color: darken($primary, 15%);
+        text-decoration: none;
+    }
+}
+
+// Custom styles for specific components
+.card {
+    border: 1px solid rgba($dark, 0.1);
+    transition: transform 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+// Add more custom styles as needed
